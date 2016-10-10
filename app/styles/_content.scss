@@ -1,0 +1,26 @@
+body {
+  color: green;
+}
+
+
+// For some reason, this h4 style is being overridden
+// By a different bower partial. Fixed by also targeting the link.
+.marketing {
+  .col-lg-6 {
+    h4 {
+      a {
+      color: $brand-warning;
+      }
+    }
+    //Styles for this paragraph work great.
+    p {
+      color: $brand-primary;
+    }
+  }
+}
+
+//round bottom of jumbotron corners
+.container .jumbotron {
+  @include border-top-radius(0px);
+  @include border-bottom-radius(50px);
+}

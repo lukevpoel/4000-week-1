@@ -1,8 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+// Ovverride Bootstrap variables
+@import "variables";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
+
 
 //changing h1
 .jumbotron h1 {
@@ -10,7 +18,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .browsehappy {
-  margin: 0.2em 0;
+  margin: 0.5em 0.5em;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
